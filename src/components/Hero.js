@@ -2,6 +2,8 @@ import React from "react";
 import Image from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
 
+import SocialLink from "../constants/socialLinks";
+
 const query = graphql `
     {
       file(relativePath: {eq: "hero-img.jpg"}) {
@@ -29,6 +31,7 @@ const Hero = () => {
             <p>Front-end. Entusiasta de projetos Open Source, acredito que a</p>
             <p>partilha do conhecimento e de boas idéias, torna o mundo um </p>
             <p>lugar melhor.</p>
+            <SocialLink />
           </div>
         </article>
         <Image fluid={fluid} className="hero-img" />
