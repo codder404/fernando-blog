@@ -231,6 +231,8 @@ Navbar
 }
 .nav-header img {
   margin-bottom: 0.375rem;
+  margin-top: 2rem;
+  width: 270px;
 }
 .toggle-btn {
   font-size: 2rem;
