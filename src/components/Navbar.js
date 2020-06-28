@@ -1,7 +1,7 @@
 import React from "react"
 import logo from "../assets/logo.svg"
 import { FaAlignRight } from "react-icons/fa"
-import PageLinks from "../constants/links"
+import PageLinks from "../constants/menu"
 const Navbar = () => {
   return <h2>navbar component</h2>
 }
