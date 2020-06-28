@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="nav-header">
           <img src={logo} alt="Logo" />
           <button type="button" className="toggle-btn">
-            <FaAlignRight />
+            <FaAlignRight></FaAlignRight>
           </button>
         </div>
         <PageLinks styleClass="nav-links"></PageLinks>
