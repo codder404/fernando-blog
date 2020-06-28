@@ -432,8 +432,9 @@ Hero
   opacity: 0.5;
   margin-left: 20px;
 }
-.hero-info h4 {
+.hero-info p {
   color: var(--clr-grey-5);
+  line-height: .45rem;
 }
 .hero-icons {
   justify-items: flex-start;
