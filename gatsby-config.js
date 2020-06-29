@@ -10,7 +10,7 @@ module.exports = {
     description: "Meu site e blog pessoal, vou escrever sobre tecnologia, animes e filosofia.",
     author: "@fernando",
     twitterUsername: "@codder404",
-    image: "/twitter-img.png",
+    image: "/hero-img.jpg",
     siteUrl: "https://fernandodossantos.netlify.app",
   },
   plugins: [
