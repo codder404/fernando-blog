@@ -1,10 +1,21 @@
-import React from "react"
-import Layout from "../components/Layout"
-import { Link } from "gatsby"
-import SEO from "../components/SEO"
+import React from "react";
+import { Link } from "gatsby";
+
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
 const Error = () => {
-  return <h2>error page</h2>
+  return (
+    <Layout>
+      <main className="error-page">
+        <div className="error-container">
+          <h1>Ooops, Página não encontrada!</h1>
+          <h1>Vida Longa e Próspera</h1>
+          <Link to="/" className="btn">Voltar</Link>
+        </div>
+      </main>
+    </Layout>
+  )
 }
 
-export default Error
+export default Error;
