@@ -1,12 +1,43 @@
-import React from "react"
-import Image from "gatsby-image"
-import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
-import SocialLinks from "../constants/socialLinks"
-// ...GatsbyImageSharpFluid
+import React from "react";
+import Image from "gatsby-image";
+import { graphql, useStaticQuery } from "gatsby";
+
+import SocialLink from "../constants/socialLinks";
+
+const query = graphql `
+    {
+      file(relativePath: {eq: "hero-img.jpg"}) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `
 
 const Hero = () => {
-  return <h2>hero component</h2>
+  const { file:
+    { childImageSharp: { fluid },
+    },
+  } = useStaticQuery(query);
+  return (
+    <header className="hero">
+      <div className="section-center hero-center">
+        <article className="hero-info">
+          <div>
+            <h1>Olá!</h1>
+            <p>Meu nome é Fernando dos Santos. Trabalho como Desenvolvedor</p>
+            <p>Front-end. Entusiasta de projetos Open Source, acredito que a</p>
+            <p>partilha do conhecimento e de boas idéias, torna o mundo um </p>
+            <p>lugar melhor.</p>
+            <SocialLink />
+          </div>
+        </article>
+        <Image fluid={fluid} className="hero-img" />
+      </div>
+   </header>
+  )
 }
 
 export default Hero
