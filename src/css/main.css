@@ -680,21 +680,17 @@ About Page
   margin-bottom: 2rem;
   text-align: left;
 }
-.about-text .underline {
-  margin-left: 0;
-  margin-right: 0;
-}
 .about-text p {
   line-height: 2;
 }
 .stack-container {
-  width: 30rem;
+  width: 20rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 0.5rem;
 }
-.stack-container span {
-  text-transform: uppercase;
+.stack-container .stack {
+  text-transform: capitalize;
   display: flex;
   align-items: center;
   letter-spacing: 1px;
