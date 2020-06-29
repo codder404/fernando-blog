@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: "Fernando dos Santos",
     description: "Meu site e blog pessoal, vou escrever sobre tecnologia, animes e filosofia.",
-    author: "@webdev",
+    author: "@fernando",
     twitterUsername: "@codder404",
     image: "/twitter-img.png",
     siteUrl: "https://fernandodossantos.netlify.app",
@@ -29,11 +29,8 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        //   contentTypes : `jobs`, `projects`, `blogs`,
-        //   singleType : `about`
-        //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
-        contentTypes: [],
+        queryLimit: 1000,
+        contentTypes: [`blogs`],
         singleTypes: [],
       },
     },
