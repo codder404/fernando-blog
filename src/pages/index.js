@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
-import Services from "../components/Services";
 import Blogs from "../components/Blogs";
 
 export default ({ data }) => {
@@ -12,7 +11,6 @@ export default ({ data }) => {
   return (
     <Layout>
       <Hero />
-      <Services />
       <Blogs blogs={blogs} title="Últimas do blog" showLink />
     </Layout>
   )
