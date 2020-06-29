@@ -4,12 +4,14 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Blogs from "../components/Blogs";
+import SEO from '../components/SEO';
 
 export default ({ data }) => {
   const { allStrapiBlogs: { nodes: blogs } } = data;
 
   return (
     <Layout>
+      <SEO title="Home" description="Página principal do blog" />
       <Hero />
       <Blogs blogs={blogs} title="Últimas do blog" showLink />
     </Layout>

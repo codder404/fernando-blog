@@ -1,10 +1,12 @@
 import React from "react";
 
 import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
 const contact = () => {
   return (
     <Layout>
+      <SEO title="Contato" description="Entre em contato com Fernando dos Santos" />
       <section className="contact-page">
         <article className="contact-form">
           <h3>Entre em contato</h3>
