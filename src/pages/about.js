@@ -4,12 +4,14 @@ import Image from "gatsby-image";
 
 import Layout from "../components/Layout";
 import Title from "../components/Title";
+import SEO from '../components/SEO';
 
 const About = ({ data: { about: { nodes } } }) => {
   const { info, title, image } = nodes[0];
 
   return (
     <Layout>
+      <SEO title="Sobre" description="Sobre Fernando dos Santos"/>
       <section className="about-page">
         <div className="section-center about-center">
           <Image fluid={image.childImageSharp.fluid} className="about-img" />
