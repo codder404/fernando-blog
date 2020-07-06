@@ -14,7 +14,7 @@ const Blog = ({ data: {
     <Layout>
       <SEO title="Blog" description="Posts de tecnologia, anime e filosofia" />
       <section className="blog-page">
-        <Blogs blogs={blogs} title="Blog" />
+        <Blogs blogs={blogs} title="Todas publicações" />
       </section>
     </Layout>
   )
