@@ -10,7 +10,7 @@ module.exports = {
     description: "Meu site e blog pessoal, vou escrever sobre tecnologia, animes e filosofia.",
     author: "@fernando",
     twitterUsername: "@codder404",
-    image: "/hero-img.jpg",
+    image: "/fcoder.jpg",
     siteUrl: "https://fernandodossantos.netlify.app",
   },
   plugins: [
@@ -39,7 +39,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Nunito`,
+            family: `Roboto`,
             variants: [`400`, `700`],
           },
           {
