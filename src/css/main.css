@@ -125,6 +125,7 @@ p {
     line-height: 1;
   }
 }
+
 /*  global classes */
 
 .btn {
@@ -298,7 +299,7 @@ Sidebar
   transform: translateX(0);
 }
 .sidebar-links li {
-  opacity: 0;
+  opacity: 0.5;
 }
 .sidebar-links li a {
   display: block;
@@ -312,7 +313,7 @@ Sidebar
   border-radius: var(--radius);
 }
 .sidebar-links li a:hover {
-  background: var(--clr-primary-9);
+  background: var(--clr-primary-4);
   color: var(--clr-primary-4);
 }
 .close-btn {
@@ -400,6 +401,12 @@ Hero
 
   .hero h4 {
     line-height: 1;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero-info {
+    width: 348px;
   }
 }
 
