@@ -6,7 +6,7 @@ import SocialLink from "../constants/socialLinks";
 
 const query = graphql `
     {
-      file(relativePath: {eq: "hero-img.jpg"}) {
+      file(relativePath: {eq: "fernando.jpg"}) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -27,10 +27,12 @@ const Hero = () => {
         <article className="hero-info">
           <div>
             <h1>Olá!</h1>
-            <p>Meu nome é Fernando dos Santos. Trabalho como Desenvolvedor</p>
-            <p>Front-end. Entusiasta de projetos Open Source, acredito que a</p>
-            <p>partilha do conhecimento e de boas idéias, torna o mundo um </p>
-            <p>lugar melhor.</p>
+            <p>
+              Meu nome é Fernando dos Santos. Trabalho como Desenvolvedor
+              Front-end. Entusiasta de projetos Open Source, acredito que a
+              partilha do conhecimento e de boas idéias, torna o mundo um
+              lugar melhor.
+            </p>
             <SocialLink />
           </div>
         </article>
