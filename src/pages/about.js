@@ -20,7 +20,7 @@ const About = ({ data: { about: { nodes } } }) => {
             <p>{info}</p>
           </article>
         </div>
-      s</section>
+      </section>
     </Layout>
   )
 }
