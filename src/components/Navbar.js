@@ -1,6 +1,5 @@
 import React from "react";
 
-import logo from "../assets/logo.png";
 import { FaBars } from "react-icons/fa";
 import PageLinks from "../constants/menu";
 
@@ -9,7 +8,7 @@ const Navbar = ({ toggleSidebar }) => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} alt="Logo" />
+          <h1>Fernando</h1>
           <button type="button" className="toggle-btn" onClick={toggleSidebar}>
             <FaBars></FaBars>
           </button>
