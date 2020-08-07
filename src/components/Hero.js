@@ -1,26 +1,6 @@
 import React from "react";
-import Image from "gatsby-image";
-import { graphql, useStaticQuery } from "gatsby";
-
-import SocialLink from "../constants/socialLinks";
-
-const query = graphql `
-    {
-      file(relativePath: {eq: "fcoder.jpg"}) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `
 
 const Hero = () => {
-  const { file:
-    { childImageSharp: { fluid },
-    },
-  } = useStaticQuery(query);
   return (
     <header className="hero">
       <div className="section-center hero-center">
@@ -33,13 +13,14 @@ const Hero = () => {
               partilha do conhecimento e de boas idéias, torna o mundo um
               lugar melhor.
             </p>
-            <SocialLink />
+            <p>
+              Atualmente sou Front-End Developer na <a target="_blank" href="https://paga3.com">Paga3</a>. 
+            </p>
           </div>
         </article>
-        <Image fluid={fluid} className="hero-img" />
       </div>
    </header>
   )
 }
 
-export default Hero
+export default Hero;

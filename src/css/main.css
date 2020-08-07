@@ -378,7 +378,6 @@ Hero
 /* underline added to globals */
 .hero {
   margin-top: -5rem;
-  padding-top: 5rem;
   height: 100vh;
   position: relative;
 }
@@ -389,27 +388,14 @@ Hero
   align-items: center;
 }
 
-.hero-info {
-  background: var(--clr-primary-2);
-  width: 515px;
-  padding: 14px;
-}
-
-.hero-img {
-  display: none;
-  height: 575px;
-  width: 575px;
-  border-radius: 4px;
-  margin-left: 60px;
+.hero-info h1 {
+  color: var(--clr-primary-1);
 }
 
 .hero-info p {
-  color: var(--clr-grey-5);
+  color: var(--clr-primary-1);
+  font-size: 1.2rem;
   line-height: 1.5rem;
-}
-
-.hero-icons {
-  justify-items: flex-start;
 }
 
 @media screen and (min-width: 992px) {
@@ -417,33 +403,15 @@ Hero
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .hero h4 {
-    font-size: 0.85rem;
-  }
-
   .hero-info {
     grid-row: 1/1;
     grid-column: 1 / span 8;
-  }
-
-  .hero-img {
-    display: block;
-    grid-row: 1/1;
-    grid-column: 6/-1;
   }
 }
 
 @media screen and (min-width: 1170px) {
-  .hero h4 {
-    font-size: 1rem;
-  }
-
   .hero-info {
-    grid-column: 1 / span 8;
-  }
-
-  .hero h4 {
-    line-height: 1;
+    grid-column: 3 / span 8;
   }
 }
 
