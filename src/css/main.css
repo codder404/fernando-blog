@@ -9,7 +9,7 @@ Variables
   --clr-primary-1: hsl(0, 0%, 6%);
   --clr-primary-2: hsl(188, 89%, 71%);
   --clr-primary-3: hsl(120, 100%, 98%);
-  --clr-primary-4: hsl(0, 100%, 71%);
+  --clr-primary-4: hsl(0, 0%, 46%);
   --clr-primary-5: hsl(50, 100%, 71%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
@@ -167,7 +167,7 @@ p {
 
 /* section */
 .section {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .section-center {
@@ -184,12 +184,12 @@ p {
 
 /* added during recording */
 .section-title {
-  margin-bottom: 4rem;
-  text-align: center;
-}
-
-.bg-grey {
-  background: var(--clr-grey-10);
+  margin-bottom: 1.6rem;
+  color: var(--clr-primary-4);
+  font-size: 2rem;
+  letter-spacing: -0.04px;
+  line-height: 1.3em;
+  text-align: left;
 }
 
 /* page links */
