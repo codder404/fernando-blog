@@ -14,7 +14,7 @@ const Hero = () => {
               lugar melhor.
             </p>
             <p>
-              Atualmente sou Front-End Developer na <a target="_blank" href="https://paga3.com">Paga3</a>. 
+              Atualmente sou Front-End Developer na <a target="_blank" href="https://paga3.com" rel="noreferrer">Paga3</a>. 
             </p>
           </div>
         </article>
