@@ -14,7 +14,7 @@ const Blog = ({ data: {
     <Layout>
       <SEO title="Blog" description="Posts de tecnologia, anime e filosofia" />
       <section className="blog-page">
-        <Blogs blogs={blogs} title="Todas publicações" />
+        <Blogs blogs={blogs}/>
       </section>
     </Layout>
   )
@@ -42,4 +42,4 @@ export const query = graphql`
   }
 `;
 
-export default Blog
+export default Blog;
