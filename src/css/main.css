@@ -13,9 +13,8 @@ Variables
 
 :root {
   /* dark shades of primary color*/
-  /* --clr-primary-1: hsl(43, 86%, 17%); */
-  --clr-primary-1: hsl(212, 14%, 19%);
-  --clr-primary-2: hsl(176, 56%, 55%);
+  --clr-primary-1: hsl(0, 0%, 6%);
+  --clr-primary-2: hsl(188, 89%, 71%);
   --clr-primary-3: hsl(120, 100%, 98%);
   --clr-primary-4: hsl(0, 100%, 71%);
   --clr-primary-5: hsl(50, 100%, 71%);
@@ -48,6 +47,7 @@ Variables
   --max-width: 1170px;
   --fixed-width: 700px;
 }
+
 /*
 =============== 
 Global Styles
@@ -61,6 +61,7 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-white);
@@ -69,9 +70,11 @@ body {
   font-size: 0.875rem;
   margin-top: 5rem;
 }
+
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -86,38 +89,49 @@ h4 {
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
 }
+
 h1 {
   font-size: 3rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.25rem;
 }
+
 h4 {
   font-size: 0.875rem;
 }
+
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-3);
 }
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
   }
+
   h2 {
     font-size: 2.5rem;
   }
+
   h3 {
     font-size: 1.75rem;
   }
+
   h4 {
     font-size: 1rem;
   }
+
   body {
     font-size: 1rem;
   }
+
   h1,
   h2,
   h3,
@@ -144,10 +158,12 @@ p {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
+
 .btn:hover {
   color: var(--clr-primary-1);
   background: var(--clr-primary-4);
 }
+
 .center-btn {
   display: block;
   width: 12rem;
@@ -155,6 +171,7 @@ p {
   margin: 0 auto;
   margin-top: 3rem;
 }
+
 /* section */
 .section {
   padding: 5rem 0;
@@ -165,19 +182,23 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
+
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
   }
 }
+
 /* added during recording */
 .section-title {
   margin-bottom: 4rem;
   text-align: center;
 }
+
 .bg-grey {
   background: var(--clr-grey-10);
 }
+
 /* page links */
 
 /* social links */
@@ -187,14 +208,17 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
 .social-link {
   font-size: 1.75rem;
   color: var(--clr-grey-1);
   transition: var(--transition);
 }
+
 .social-link:hover {
   color: var(--clr-primary-5);
 }
+
 /*
 =============== 
 Navbar
@@ -210,23 +234,28 @@ Navbar
   display: flex;
   align-items: center;
   z-index: 200;
-  background: var(--clr-white);
+  background: #141414;
 }
+
 .nav-center {
   width: 90vw;
   max-width: 1170px;
   margin: 0 auto;
 }
+
 .nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-header img {
   margin-bottom: 0.375rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 270px;
+  height: 60px;
 }
+
 .toggle-btn {
   font-size: 2rem;
   background: transparent;
@@ -235,34 +264,42 @@ Navbar
   cursor: pointer;
   transition: var(--transition);
 }
+
 .toggle-btn:hover {
-  color: var(--clr-primary-4);
+  color: var(--clr-primary-2);
 }
+
 .nav-links {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   .toggle-btn {
     display: none;
   }
+
   .nav-links {
     display: flex;
     justify-content: flex-end;
   }
+
   .nav-links li {
     margin-right: 2rem;
   }
+
   .nav-links a {
     text-transform: capitalize;
-    color: #141414;
+    color: var(--clr-primary-3);
     font-weight: bold;
     letter-spacing: var(--spacing);
     transition: var(--transition);
     padding: 0.5rem 0;
   }
+
   .nav-links a:hover {
-    color: var(--clr-primary-4);
+    color: var(--clr-primary-2);
   }
+
   .nav-center {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -272,9 +309,10 @@ Navbar
 
 @media screen and (min-width: 992px) {
   .navbar {
-    background: transparent;
+    background: var(--clr-primary-1);
   }
 }
+
 /*
 =============== 
 Sidebar
@@ -294,13 +332,16 @@ Sidebar
   transition: var(--transition);
   transform: translateX(-100%);
 }
+
 .show-sidebar {
   opacity: 1;
   transform: translateX(0);
 }
+
 .sidebar-links li {
   opacity: 0.5;
 }
+
 .sidebar-links li a {
   display: block;
   text-align: center;
@@ -312,10 +353,12 @@ Sidebar
   transition: var(--transition);
   border-radius: var(--radius);
 }
+
 .sidebar-links li a:hover {
   background: var(--clr-primary-4);
   color: var(--clr-primary-4);
 }
+
 .close-btn {
   position: absolute;
   right: 4.75%;
@@ -326,6 +369,7 @@ Sidebar
   color: var(--clr-red-dark);
   cursor: pointer;
 }
+
 @media screen and (min-width: 992px) {
   .sidebar {
     transform: translateX(-100%);
@@ -342,7 +386,6 @@ Hero
   margin-top: -5rem;
   padding-top: 5rem;
   height: 100vh;
-  background: var(--clr-primary-2);
   position: relative;
 }
 
@@ -357,6 +400,7 @@ Hero
   width: 515px;
   padding: 14px;
 }
+
 .hero-img {
   display: none;
   height: 575px;
@@ -364,10 +408,12 @@ Hero
   border-radius: 4px;
   margin-left: 60px;
 }
+
 .hero-info p {
   color: var(--clr-grey-5);
   line-height: 1.5rem;
 }
+
 .hero-icons {
   justify-items: flex-start;
 }
@@ -380,16 +426,19 @@ Hero
   .hero h4 {
     font-size: 0.85rem;
   }
+
   .hero-info {
     grid-row: 1/1;
     grid-column: 1 / span 8;
   }
+
   .hero-img {
     display: block;
     grid-row: 1/1;
     grid-column: 6/-1;
   }
 }
+
 @media screen and (min-width: 1170px) {
   .hero h4 {
     font-size: 1rem;
@@ -424,18 +473,22 @@ Services
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
+
 .service-icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
+
 .service p {
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
+
 .service:hover {
   background: var(--clr-primary-5);
   color: var(--clr-primary-9);
 }
+
 .service:hover p {
   color: var(--clr-primary-9);
 }
@@ -449,6 +502,7 @@ Services
     column-gap: 2rem;
   }
 }
+
 @media screen and (min-width: 992px) {
   .services-center {
     grid-template-columns: 1fr 1fr 1fr;
@@ -468,27 +522,33 @@ Blog
   box-shadow: var(--light-shadow);
   transition: var(--transition);
 }
+
 .blog:hover {
   box-shadow: var(--dark-shadow);
   transform: scale(1.02);
 }
+
 .blog article {
   height: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
 }
+
 .blog-card {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+
 .blog-img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   height: 15rem;
 }
+
 .blog-card {
   padding: 1.5rem 1rem;
 }
+
 .blog-card h4 {
   color: var(--clr-grey-1);
 }
@@ -498,11 +558,13 @@ Blog
   justify-content: space-between;
   align-items: center;
 }
+
 .blog-footer p {
   margin-bottom: 0;
   font-weight: bold;
   color: var(--clr-grey-5);
 }
+
 .blog-footer p:first-of-type {
   display: inline-block;
   background: var(--clr-grey-9);
@@ -514,16 +576,19 @@ Blog
   letter-spacing: 2px;
   font-size: 0.85rem;
 }
+
 @media screen and (min-width: 576px) {
   .blogs-center {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
     column-gap: 2rem;
   }
+
   .blog-img {
     height: 17.5rem;
   }
 }
+
 @media screen and (min-width: 850px) {
   .blog-img {
     height: 13.75rem;
@@ -542,20 +607,25 @@ Footer
   display: grid;
   place-items: center;
 }
+
 .footer h4 {
   margin-top: 0.5rem;
   color: var(--clr-white);
   font-weight: normal;
 }
+
 .footer-links {
   margin: 0 auto 1rem auto;
 }
+
 .footer .social-link {
   color: var(--clr-white);
 }
+
 .footer .social-link:hover {
   color: var(--clr-primary-2);
 }
+
 /*
 ===============
 Pages
@@ -570,17 +640,20 @@ Pages
   background: var(--clr-grey-10);
   min-height: calc(100vh - 5rem - 9rem);
 }
+
 .error-page {
   display: grid;
   place-items: center;
   background: var(--clr-primary-10);
   text-align: center;
 }
+
 .error-page h1 {
   text-transform: uppercase;
   color: var(--clr-primary-1);
   margin-bottom: 2rem;
 }
+
 /*
 ===============
 Blog Page
@@ -589,6 +662,7 @@ Blog Page
 .blog-page .blog {
   background: var(--clr-white);
 }
+
 /*
 ===============
 About Page
@@ -597,23 +671,28 @@ About Page
 .about-page {
   padding: 7rem 0;
 }
+
 .about-img {
   margin-bottom: 2rem;
   height: 25rem;
 }
+
 .about-text .section-title {
   margin-bottom: 2rem;
   text-align: left;
 }
+
 .about-text p {
   line-height: 2;
 }
+
 .stack-container {
   width: 20rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 0.5rem;
 }
+
 .stack-container .stack {
   text-transform: capitalize;
   display: flex;
@@ -621,11 +700,13 @@ About Page
   letter-spacing: 1px;
   color: var(--clr-grey-4);
 }
+
 .stack-icon {
   color: var(--clr-primary-5);
   margin-right: 0.25rem;
   font-size: 1rem;
 }
+
 @media screen and (min-width: 992px) {
   .about-center {
     display: grid;
@@ -633,14 +714,17 @@ About Page
     align-items: center;
     column-gap: 4rem;
   }
+
   .about-img {
     grid-column: 1 / span 5;
     margin-bottom: 0;
   }
+
   .about-text {
     grid-column: 6 / -1;
   }
 }
+
 /*
 ===============
 Contact Page
@@ -651,6 +735,7 @@ Contact Page
   place-items: center;
   padding: 5rem 0;
 }
+
 .contact-form {
   background: var(--clr-white);
   border-radius: var(--radius);
@@ -660,16 +745,20 @@ Contact Page
   width: 90vw;
   max-width: 35rem;
 }
+
 .contact-form:hover {
   box-shadow: var(--dark-shadow);
 }
+
 .contact-form h3 {
   padding-top: 1.25rem;
   color: var(--clr-grey-5);
 }
+
 .form-group {
   padding: 1rem 1.5rem;
 }
+
 .form-control {
   display: block;
   width: 100%;
@@ -681,12 +770,14 @@ Contact Page
   text-transform: uppercase;
   letter-spacing: var(--spacing);
 }
+
 .form-control::placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-grey-1);
   text-transform: uppercase;
   letter-spacing: var(--spacing);
 }
+
 .submit-btn {
   display: block;
   width: 100%;
@@ -696,6 +787,7 @@ Contact Page
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+
 /*
 ===============
 Blog Template
@@ -709,10 +801,12 @@ Blog Template
 .blog-template h2 {
   text-align: center;
 }
+
 .blog-template ul {
   margin-top: 2rem;
   display: inline-block;
 }
+
 .blog-template ul li {
   background: var(--clr-grey-9);
   color: var(--clr-grey-5);
@@ -729,6 +823,7 @@ Blog Template
   color: var(--clr-primary-5);
   margin: 2rem 0;
 }
+
 .blog-template pre {
   background: #222;
   color: yellow;
@@ -736,6 +831,7 @@ Blog Template
   padding: 1rem 1.5rem;
   border-radius: var(--radius);
 }
+
 .blog-template img {
   width: 15rem;
   height: 15rem;
