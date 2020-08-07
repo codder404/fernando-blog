@@ -15,7 +15,7 @@ export const Blogs = ({ blogs, title, showLink }) => {
       </div>
       {showLink && (
         <Link to="/blog" className="btn center-btn">
-          todos os posts
+          Ver todos os posts
         </Link>
       )}
     </section>
