@@ -13,9 +13,6 @@ const Hero = () => {
               partilha do conhecimento e de boas idéias, torna o mundo um
               lugar melhor.
             </p>
-            <p>
-              Atualmente sou Front-End Developer na <a target="_blank" href="https://paga3.com" rel="noreferrer">Paga3</a>. 
-            </p>
           </div>
         </article>
       </div>
