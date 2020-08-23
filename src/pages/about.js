@@ -6,4 +6,4 @@ const AboutPage = () => {
   return <About />
 }
 
-export default About;
+export default AboutPage;
