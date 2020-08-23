@@ -424,8 +424,8 @@ Hero
 Services
 ===============
 */
-.service {
-  background: var(--clr-white);
+.lab {
+  background: #141414;
   padding: 3rem 1.5rem;
   margin-bottom: 2rem;
   border-radius: var(--radius);
@@ -434,27 +434,19 @@ Services
   transition: var(--transition);
 }
 
-.service-icon {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+.lab-img {
+  height: 12rem;
+  width: 100%;
+  margin-bottom: 1.25rem;
 }
 
-.service p {
+.lab p {
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
-.service:hover {
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
-}
-
-.service:hover p {
-  color: var(--clr-primary-9);
-}
-
 @media screen and (min-width: 676px) {
-  .services-center {
+  .labs-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 2rem;
@@ -464,7 +456,7 @@ Services
 }
 
 @media screen and (min-width: 992px) {
-  .services-center {
+  .labs-center {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
