@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 
+import './styles.css';
 
 const ComponentName = ({ data }) => {
   const { content, title, desc } = data.blog;
