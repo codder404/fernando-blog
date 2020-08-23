@@ -190,8 +190,6 @@ p {
   text-align: left;
 }
 
-/* page links */
-
 /* social links */
 .social-links {
   margin-top: 2rem;
@@ -259,27 +257,6 @@ About Page
 
 .about-text p {
   line-height: 2;
-}
-
-.stack-container {
-  width: 20rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 0.5rem;
-}
-
-.stack-container .stack {
-  text-transform: capitalize;
-  display: flex;
-  align-items: center;
-  letter-spacing: 1px;
-  color: var(--clr-grey-4);
-}
-
-.stack-icon {
-  color: var(--clr-primary-5);
-  margin-right: 0.25rem;
-  font-size: 1rem;
 }
 
 @media screen and (min-width: 992px) {
