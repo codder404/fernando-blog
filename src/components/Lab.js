@@ -1,15 +1,16 @@
 import React from "react";
 
 import Title from "./Title";
-import services from "../constants/services";
+import labs from "../constants/lab";
+import Lab from "../pages/lab";
 
-const Services = () => {
+const Lab = () => {
   return (
     <section className="section bg-grey">
       <Title title="Serviços" />
       <div className="section-center services-center">
-        {services.map(service => {
-          const { id, icon, title, text } = service;
+        {labs.map(lab => {
+          const { id, icon, title, text } = lab;
 
           return (
             <article key={id} className="service">
@@ -24,4 +25,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Lab;
