@@ -16,6 +16,11 @@ const data = [
     text: "blog",
     url: "/blog/",
   },
+  {
+    id: 4,
+    text: "lab",
+    url: "/lab/"
+  }
 ]
 
 const tempLinks = data.map(link => {
