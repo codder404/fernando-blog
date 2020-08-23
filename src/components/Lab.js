@@ -1,12 +1,10 @@
 import React from "react";
 
-import Title from "./Title";
 import labs from "../constants/lab";
 
 const Lab = () => {
   return (
-    <section className="section bg-grey">
-      <Title title="Serviços" />
+    <section className="section">
       <div className="section-center services-center">
         {labs.map(lab => {
           const { id, image, title, text } = lab;
