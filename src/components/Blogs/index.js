@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Blog from "./Blog";
+import Blog from "../Blog";
 
 export const Blogs = ({ blogs, title, showLink }) => {
   return (
