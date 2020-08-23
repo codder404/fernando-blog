@@ -1,6 +1,6 @@
 import React from "react";
 
-import labs from "../constants/lab";
+import labs from "../../constants/lab";
 import './styles.css';
 
 const Lab = () => {

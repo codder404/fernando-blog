@@ -1,6 +1,5 @@
 .lab {
-  background: #141414;
-  padding: 3rem 1.5rem;
+  background: var(--clr-primary-3);
   margin-bottom: 2rem;
   border-radius: var(--radius);
   text-align: center;
@@ -9,12 +8,21 @@
 }
 
 .lab-img {
-  height: 12rem;
+  height: 14rem;
   width: 100%;
   margin-bottom: 1.25rem;
 }
 
+.lab h4 {
+  text-align: left;
+  font: 700 1.225rem Roboto;
+  padding: 0 14px 0 14px;
+}
+
 .lab p {
+  padding: 0 14px 0 14px;
+  text-align: justify;
+  color: var(--clr-primary-1);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
