@@ -1,8 +1,10 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 
-import Links from "../constants/menu";
-import SocialLinks from "../constants/socialLinks";
+import Links from "../../constants/menu";
+import SocialLinks from "../../constants/socialLinks";
+
+import './styles.css';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
