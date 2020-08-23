@@ -518,37 +518,6 @@ Blog
 
 /*
 ===============
-Footer
-===============
-*/
-.footer {
-  height: 9rem;
-  background: var(--clr-primary-1);
-  text-align: center;
-  display: grid;
-  place-items: center;
-}
-
-.footer h4 {
-  margin-top: 0.5rem;
-  color: var(--clr-white);
-  font-weight: normal;
-}
-
-.footer-links {
-  margin: 0 auto 1rem auto;
-}
-
-.footer .social-link {
-  color: var(--clr-white);
-}
-
-.footer .social-link:hover {
-  color: var(--clr-primary-2);
-}
-
-/*
-===============
 Pages
 ===============
 */
