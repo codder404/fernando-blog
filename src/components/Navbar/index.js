@@ -1,7 +1,9 @@
 import React from "react";
 
 import { FaBars } from "react-icons/fa";
-import PageLinks from "../constants/menu";
+import PageLinks from "../../constants/menu";
+
+import './styles.css';
 
 const Navbar = ({ toggleSidebar }) => {
   return (
