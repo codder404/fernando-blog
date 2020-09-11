@@ -1,7 +1,5 @@
 import React from "react";
 
-import DarkTheme from "../DarkTheme";
-
 import { FaBars } from "react-icons/fa";
 import PageLinks from "../../constants/menu";
 
@@ -18,7 +16,6 @@ const Navbar = ({ toggleSidebar }) => {
           </button>
         </div>
         <PageLinks styleClass="nav-links"></PageLinks>
-        <DarkTheme />
       </div>
     </nav>
   )
