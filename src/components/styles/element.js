@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import { Img } from 'gatsby-image';
 
 export const Section = styled.section `
   display: flex;
@@ -102,19 +101,3 @@ export const ViewLink = styled(Link)`
     background: #202124;
   }
 `;
-
-export const AvatarWrapper = styled(Img)`
-  display: block;
-  border-radius: 16px;
-  margin-bottom: 1rem;
-  min-height: 200px;
-  min-width: 200px;
-  max-width: 200px;
-
-  @media screen and (min-width: 66.667em) {
-    margin-bottom: 0;
-    min-height: 360px;
-    min-width: 360px;
-    max-width: 360px;
-  }
-`
