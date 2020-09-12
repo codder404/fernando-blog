@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import Navbar from '../Navbar';
+import Navbar from '../Navbar';
 // import Footer from '../Footer';
 
 import GlobalStyles from '../styles/globalStyle';
@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyles />
       <Container>
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         {/* <Footer /> */}
       </Container>
