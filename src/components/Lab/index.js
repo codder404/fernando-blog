@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'gatsby';
 
 import labs from "../../constants/lab";
 import './styles.css';
