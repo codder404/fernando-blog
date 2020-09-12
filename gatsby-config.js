@@ -9,6 +9,19 @@ module.exports = {
     siteUrl: 'https://fernandodossantos.netlify.app',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'pt-ao'
+      }
+    },
+    `gatsby-plugin-emotion`,
+    {
+      resolve: 'gatsby-plugin-styled-components',
+      options: {
+        displayName: false
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -16,8 +29,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `assets`,
-        path: `${__dirname}/src/assets/`,
+        name: `images`,
+        path: `${__dirname}/static/images`,
       },
     },
     {
@@ -30,17 +43,26 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Roboto`,
-            variants: [`400`, `700`],
-          },
-          {
-            family: `Open Sans`,
-          },
+          `Nunito`,
+          `source sans-serif\:400,700`
         ],
+        display: 'swap'
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Fernando`,
+        lang: `pt-ao`,
+        description: `Desenvolvedor FrontEnd`,
+        short_name: `Fernando`,
+        start_url: `/`,
+        background_color: `#2E3440`,
+        dispaly: `standalone`,
+        icon: `${__dirname}/static/images/iduck.png`,
       },
     },
   ],
