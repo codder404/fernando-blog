@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 export const Section = styled.section `
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
   margin-bottom: 3.5rem;
 
   @media (min-width: 66.667em) {
