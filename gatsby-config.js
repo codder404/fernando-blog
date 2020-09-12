@@ -33,15 +33,15 @@ module.exports = {
         path: `${__dirname}/static/images`,
       },
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        queryLimit: 1000,
-        contentTypes: [`blogs`],
-        singleTypes: [`about`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: {
+    //     apiURL: `http://localhost:1337`,
+    //     queryLimit: 1000,
+    //     contentTypes: [`blogs`],
+    //     singleTypes: [`about`],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
