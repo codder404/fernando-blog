@@ -84,8 +84,7 @@ export const Row = styled.div `
   }
 `
 
-export const ViewLink = styled(Link)
-`
+export const ViewLink = styled(Link)`
   display: flex;
   font-weight: 500;
   background: rgba(193, 193, 193, 0.06);
@@ -100,5 +99,21 @@ export const ViewLink = styled(Link)
 
   &:hover {
     background: #202124;
+  }
+`;
+
+export const AvatarWrapper = styled(Img)`
+  display: block;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  min-height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+
+  @media screen and (min-width: 66.667em) {
+    margin-bottom: 0;
+    min-height: 360px;
+    min-width: 360px;
+    max-width: 360px;
   }
 `
