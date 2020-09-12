@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import { Img } from 'gatsby-image';
 
 export const Section = styled.section `
   display: flex;
