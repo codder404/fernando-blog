@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   @import url("https://fonts.googleapis.com/css?family=Nunito:wght@400,700&display=swap");
@@ -166,3 +166,37 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: unset;
   }
 `
+export const Main = styled.main`
+  margin-top: 0;
+  padding: 40px 0;
+  background-color: var(--Nerd04);
+
+  @media (prefers-color-schema: dark) {
+    background-color: var(--Nerd01);
+  }
+
+  @media (prefers-color-schema: light) {
+    background-color: var(--Nerd04);
+  }
+
+  @media (prefers-color-schema: no-preference) {
+    background-color: var(--Nerd04);
+  }
+`;
+
+export const Container = styled.div`
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 850px;
+  box-sizing: border-box;
+
+  @media (min-width: 33.75em) {
+    width: 80%;
+    padding: 0 1.5rem;
+  }
+
+  @media (min-width: 45em) {
+    padding: 0 2rem;
+  }
+`; 
