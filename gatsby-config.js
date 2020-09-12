@@ -1,17 +1,12 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   siteMetadata: {
-    title: "Fernando dos Santos",
-    description: "Meu site e blog pessoal, vou escrever sobre tecnologia, animes e filosofia.",
-    author: "@fernando",
-    twitterUsername: "@codder404",
-    image: "/fcoder.jpg",
-    siteUrl: "https://fernandodossantos.netlify.app",
+    title: 'Fernando dos Santos',
+    description: `Blog about Front-End`,
+    author: `@fernando`,
+    twitterUsername: `@codder404`,
+    image: '/fcoder.jpg',
+    url: 'https://fernandodossantos.netlify.app',
+    siteUrl: 'https://fernandodossantos.netlify.app',
   },
   plugins: [
     `gatsby-transformer-sharp`,
