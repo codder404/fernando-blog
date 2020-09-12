@@ -4,6 +4,7 @@ module.exports = {
     description: `My Personal Site`,
     author: `@fernando`,
     twitterUsername: `@codder404`,
+    image: '/static/images',
     url: 'https://fernandodossantos.netlify.app',
     siteUrl: 'https://fernandodossantos.netlify.app',
   },
