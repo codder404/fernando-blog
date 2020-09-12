@@ -13,7 +13,7 @@ import {
 
 const Navbar = () => {
   return (
-    <Navbar>
+    <Header>
       <HomeLink to="/">
         <Title>
           <span className="icon" role="img" aria-label="iduck">🦆</span>
@@ -31,7 +31,7 @@ const Navbar = () => {
           </MenuLinksItems>
         ))}
       </MenuLinkList>
-    </Navbar>
+    </Header>
   )
 }
 
