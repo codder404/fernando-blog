@@ -3,7 +3,7 @@ import React from 'react';
 import menuLinks from './content';
 
 import { 
-  Navbar, 
+  Header, 
   HomeLink, 
   Title,
   MenuLinkList, 
