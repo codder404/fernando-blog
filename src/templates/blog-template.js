@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
-import { ViewLink, Section } from '../components/styles/element';
+import { Section } from '../components/styles/element';
 
 const BlogTemplate = ({ data }) => {
   const { content, title, desc } = data.blog;
@@ -16,9 +16,6 @@ const BlogTemplate = ({ data }) => {
       <Section>
         <ReactMarkdown source={content} />
       </Section>
-      <ViewLink to="/blog">
-        Blog
-      </ViewLink>
     </Layout>
   )
 }
