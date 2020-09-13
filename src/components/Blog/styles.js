@@ -12,7 +12,7 @@ export const Card = styled(Link)`
   position: relative;
   border: 1px solid #202124;
   margin-bottom: .6rem;
-  margin-left: 12em;
+  margin: 0 auto;
 
   &:before {
     content: '';
