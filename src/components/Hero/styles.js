@@ -16,8 +16,8 @@ export const Container = styled.div`
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
-  width: 60%;
-  margin-left: 12em;
+  width: 76%;
+  margin: 0 auto;
 
   @media (min-width: 66.667em) {
     margin-right: 2.5rem;
