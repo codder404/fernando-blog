@@ -90,7 +90,8 @@ export const ViewLink = styled(Link)`
   background: rgba(193, 193, 193, 0.06);
   color: #fff;
   padding: 0.6rem 1.2rem;
-  margin-left: 15em;
+  margin-left: 17em;
+  margin-top: 1rem;
   width: 13%;
   font-size: 0.8rem;
   border-radius: 3rem;
