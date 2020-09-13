@@ -1,13 +1,33 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import { Container } from './styles';
+import { 
+  Card, 
+  ListCategory, 
+  Category 
+} from './styles';
+
+import { PostTitle, PostMiddle, PostSmall } from '../styles/typography';
 
 const Lab = () => {
   return (
-    <Container>
-      <h1>Lab</h1>
-    </Container>
+    <>
+      <Card to="/">
+      <PostTitle>
+       <PostSmall>Image</PostSmall>
+       title
+       <PostMiddle>descrição</PostMiddle>
+      </PostTitle>
+      <ListCategory>
+        <Category>Url</Category>
+      </ListCategory>
+    </Card>
+    </>
   )
+}
+
+Lab.propTypes = {
+  
 }
 
 export default Lab;
