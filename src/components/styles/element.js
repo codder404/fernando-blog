@@ -91,11 +91,12 @@ export const ViewLink = styled(Link)`
   color: #fff;
   padding: 0.6rem 1.2rem;
   margin-left: 15em;
-  width: 8%;
+  width: 13%;
   font-size: 0.8rem;
   border-radius: 3rem;
   border-bottom: 0;
   white-space: nowrap;
+  text-decoration: none;
   line-height: 1;
   cursor: pointer;
 
@@ -104,7 +105,7 @@ export const ViewLink = styled(Link)`
   }
 
   @media (max-width: 41.667em) {
-    width: 23%;
+    width: 39%;
     margin-left: 0;
   }
 `;
