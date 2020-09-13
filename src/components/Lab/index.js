@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Image from 'gatsby-image';
 
-import { 
+import {
   Card, 
   ListCategory, 
   Category 
@@ -9,17 +10,28 @@ import {
 
 import { PostTitle, PostMiddle, PostSmall } from '../styles/typography';
 
-const Lab = () => {
+const Lab = ({
+    id,
+    title,
+    description, 
+    github,
+    url,
+    image,
+    stack
+  }) => {
   return (
     <>
-      <Card to="/">
+      <Card key={id}>
       <PostTitle>
-       <PostSmall>Image</PostSmall>
-       title
-       <PostMiddle>descrição</PostMiddle>
+       <PostSmall>
+        <Image fluid={image} />
+       </PostSmall>
+       {title}
+       <PostMiddle>{description}</PostMiddle>
       </PostTitle>
       <ListCategory>
-        <Category>Url</Category>
+        <Category>{github}</Category>
+        <Category>{url}</Category>
       </ListCategory>
     </Card>
     </>
@@ -27,7 +39,13 @@ const Lab = () => {
 }
 
 Lab.propTypes = {
-  
+  id: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+  stack: PropTypes.object.isRequired,
+  url: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 }
 
 export default Lab;

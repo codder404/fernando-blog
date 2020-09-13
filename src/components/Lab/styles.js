@@ -1,17 +1,16 @@
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
-export const Card = styled(Link)`
+export const Card = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  width: 60%;
+  width: 40%;
   background: transparent;
   text-decoration: none;
   font-weight: 400;
   position: relative;
   border: 1px solid #202124;
-  margin-bottom: .6rem;
+  margin-bottom: .9rem;
   margin: 0 auto;
 
   &:before {

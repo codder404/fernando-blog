@@ -3,13 +3,12 @@ import React from 'react';
 import Lab from '../Lab';
 import { Section } from '../../components/styles/element';
 
-const Labs = () => {
+const Labs = ({ projects }) => {
   return (
     <Section>
-      <Lab />
-      <Lab />
-      <Lab />
-      <Lab />
+     {projects.map((project, index) => {
+       return <Lab key={project.id} index={index} {...project} />
+     })}
     </Section>
   )
 }
