@@ -18,14 +18,14 @@ const BlogPage = ({ data: {
   )
 }
 
-export const query = graphql `
+export const query = graphql`
   {
     allStrapiBlogs {
       nodes {
-        slug
-        desc
-        date(formatString: "DD MM YY")
         id
+        desc
+        date(formatString: "DD MMM YY")
+        slug
         title
         stack {
           id
@@ -35,5 +35,6 @@ export const query = graphql `
     }
   }
 `;
+
 
 export default BlogPage;

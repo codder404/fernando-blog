@@ -20,14 +20,14 @@ export default ({ data }) => {
   )
 }
 
-export const query = graphql `
+export const query = graphql`
   {
     allStrapiBlogs(sort: {fields: date, order: DESC}, limit: 3) {
       nodes {
+        id
         slug
         desc
-        date(formatString: "DD MM YY")
-        id
+        date(formatString: "DD MMM YY")
         title
         stack {
           id
@@ -36,4 +36,4 @@ export const query = graphql `
       }
     }
   }
-`
+`;

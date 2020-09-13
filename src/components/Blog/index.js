@@ -9,7 +9,7 @@ import {
 
 import { PostTitle, PostMiddle, PostSmall } from '../styles/typography';
 
-const Blog = ({ id, title, date, slug, desc, stack }) => {
+const Blog = ({ id, title, date, slug, desc }) => {
   return (
     <>
       <Card to={`/blogs/${slug}`} key={id}>
@@ -19,7 +19,7 @@ const Blog = ({ id, title, date, slug, desc, stack }) => {
        <PostMiddle>{desc}</PostMiddle>
       </PostTitle>
       <ListCategory>
-        <Category>{stack}</Category>
+        <Category></Category>
       </ListCategory>
     </Card>
     </>
@@ -30,7 +30,7 @@ Blog.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  stack: PropTypes.string.isRequired,
+  stack: PropTypes.object.isRequired,
   desc: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
 }
