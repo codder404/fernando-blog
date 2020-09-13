@@ -17,7 +17,7 @@ const BlogTemplate = ({ data }) => {
         <ReactMarkdown source={content} />
       </Section>
       <ViewLink to="/blog">
-        blog
+        Blog
       </ViewLink>
     </Layout>
   )
