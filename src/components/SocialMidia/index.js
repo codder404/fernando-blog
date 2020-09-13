@@ -51,7 +51,7 @@ const SocialMidia = () => {
         title="Linkedin"
       >
         <Linkedin />
-        /fernandodossantos
+        /fernandodos
       </ItemSocial>
     </ListSocial>
   )
