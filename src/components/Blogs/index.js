@@ -4,7 +4,7 @@ import Blog from '../Blog';
 import { Section, Row, ViewLink } from '../../components/styles/element';
 import { BTitle } from '../../components/styles/typography';
 
-const Blogs = ({ blogs, showLink }) => {
+const Blogs = ({ blogs }) => {
   return (
     <Section>
       <Row>
@@ -13,9 +13,8 @@ const Blogs = ({ blogs, showLink }) => {
       {blogs.map((blog) => {
         return <Blog key={blog.id} {...blog} />
       })}
-      {showLink && (
-        <ViewLink to="/blog">View All</ViewLink>
-      )}
+      
+      <ViewLink to="/blog">View All</ViewLink>
     </Section>
   )
 }
