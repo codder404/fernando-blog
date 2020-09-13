@@ -1,18 +1,34 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import Blogs from '../components/Blogs';
 import Social from '../components/SocialText';
 
-const IndexPage = () => {
+export default ({ data }) => {
+  const { allStrapiBlogs: { nodes: blogs } } = data;
+
   return (
     <Layout>
       <Hero />
-      <Blogs />
+      <Blogs blogs={blogs} />
       <Social />
     </Layout>
   )
 }
 
-export default IndexPage;
+export const query = graphql `
+  {
+    allStrapiBlogs(sort: {fields: date, order: DESC}, limit: 3) {
+      nodes {
+        slug
+        desc
+        date(formatString: "DD MM YY")
+        id
+        title
+        category
+      }
+    }
+  }
+`
