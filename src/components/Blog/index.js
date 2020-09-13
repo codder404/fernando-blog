@@ -26,7 +26,7 @@ const Blog = ({ id, title, date, slug, desc, category }) => {
   )
 }
 
-Post.propTypes = {
+Blog.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
