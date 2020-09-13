@@ -19,15 +19,6 @@ export const Header = styled.header`
     margin: 1.6rem 0;
     padding: 1.2rem 0;
   }
-
-  span.icon {
-    display: inline-block;
-    margin: 0 .25rem 0 .1rem;
-
-    @media (min-width: 66.667em) {
-      margin: 0 .5rem 0 .1rem
-    }
-  }
 `;
 
 export const HomeLink = styled(Link)`

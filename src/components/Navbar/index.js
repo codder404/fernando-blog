@@ -16,8 +16,8 @@ const Navbar = () => {
     <Header>
       <HomeLink to="/">
         <Title>
-          <span className="icon" role="img" aria-label="iduck">🦆</span>
-          Fernando
+          <span className="icon" role="img" aria-label="iduck">@</span>
+          fernando
         </Title>
       </HomeLink>
       <MenuLinkList>
