@@ -7,10 +7,12 @@ import { Chrome } from '@styled-icons/boxicons-logos/Chrome';
 import {
   Card, 
   ListCategory, 
-  Category 
+  Category,
+  ListSocial,
+  ItemSocial 
 } from './styles';
 
-import { PostTitle, PostMiddle, PostSmall } from '../styles/typography';
+import { PostTitle, PostMiddle } from '../styles/typography';
 
 const Lab = ({
     title,
@@ -25,13 +27,21 @@ const Lab = ({
     <>
       <Card>
       <PostTitle>
-       <PostSmall>
         <Image fluid={image.childImageSharp.fluid} />
-       </PostSmall>
        0{index + 1}
        {title}
        <PostMiddle>{description}</PostMiddle>
       </PostTitle>
+      <ListSocial>
+        <ItemSocial className={"github"} href={github} title="GitHub">
+          <Github />
+        </ItemSocial>
+      
+        <ItemSocial className={"chrome"} href={url} title="Site">
+         <Chrome />
+        </ItemSocial>
+      </ListSocial>
+
       <ListCategory>
         {stack.map((item) => {
           return (
