@@ -1,16 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import SocialLinks from "../../constants/socialLinks";
-
-import './styles.css';
+import { Foo, Copy, CopyLink } from './styles';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div>
-        <SocialLinks styleClass="footer-links"></SocialLinks>
-      </div>
-    </footer>
+    <Foo>
+      <Copy>
+        © 2020 - Fernando dos Santos, <CopyLink>Politicas de privacidade</CopyLink> <CopyLink>Termos de uso</CopyLink>
+      </Copy>
+    </Foo>
   )
 }
 

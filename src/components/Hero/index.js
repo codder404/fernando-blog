@@ -1,24 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import './styles.css';
+import { Container, Section } from './styles';
+import { Title, Text } from '../styles/typography';
 
 const Hero = () => {
   return (
-    <header className="hero">
-      <div className="section-center hero-center">
-        <article className="hero-info">
-          <div>
-            <h1>Olá!</h1>
-            <p>
-              Meu nome é Fernando dos Santos. Trabalho como Desenvolvedor
-              Front-end. Entusiasta de projetos Open Source, acredito que a
-              partilha do conhecimento e de boas idéias, torna o mundo um
-              lugar melhor.
-            </p>
-          </div>
-        </article>
-      </div>
-   </header>
+    <Container>
+      <Section>
+        <Title style={{marginBottom: "1rem"}}>Hi There!</Title>
+        <Text>
+          My name is Fernando dos Santos from Angola. I've been working as Front-End Developer since 2017. I'm passionate about open source projects, I believe that the dissemination of knowledge and good ideas inspires and improves the world.
+
+          Currently, I'm a Front-end Developer at Paga3. I'm focused on Front-end Development and user experience, I like to play with CSS, I'm always testing new things.
+        </Text>
+      </Section>
+    </Container>
   )
 }
 

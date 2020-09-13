@@ -1,27 +1,28 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Image from "gatsby-image";
-import { Link } from "gatsby";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import './styles.css';
+import { 
+  Card, 
+  ListCategory, 
+  Category 
+} from './styles';
 
-const Blog = ({ id, title, image, date, category, slug, desc }) => {
+import { PostTitle, PostMiddle, PostSmall } from '../styles/typography';
+
+const Blog = ({ id, title, date, slug, desc, category }) => {
   return (
-    <Link to={`/blogs/${slug}`} key={id} className="blog">
-      <article>
-        {image && (
-          <Image fluid={image.childImageSharp.fluid} className="blog-img" />
-        )}
-        <div className="blog-card">
-          <h4>{title}</h4>
-          <p className="text">{desc}</p>
-          <div className="blog-footer">
-            <p>{category}</p>
-            <p>{date}</p>
-          </div>
-        </div>
-      </article>
-    </Link>
+    <>
+      <Card to={`/blogs/${slug}`} key={id}>
+      <PostTitle>
+       <PostSmall>{date}</PostSmall>
+       {title}
+       <PostMiddle>{desc}</PostMiddle>
+      </PostTitle>
+      <ListCategory>
+       <Category>{category}</Category>
+      </ListCategory>
+    </Card>
+    </>
   )
 }
 
@@ -32,7 +33,6 @@ Blog.propTypes = {
   category: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
-  image: PropTypes.object.isRequired,
 }
 
 export default Blog;

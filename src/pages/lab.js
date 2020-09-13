@@ -2,17 +2,14 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import Labs from '../components/Lab';
 
-function Lab() {
+const LabPage = () => {
   return (
     <Layout>
-      <SEO title="Lab" description="Meu laboratório de projetos" />
-      <section className="">
-       <Labs />
-      </section>
+      <SEO title="Lab" />
+      <h1>Em construção!</h1>
     </Layout>
   )
 }
 
-export default Lab;
+export default LabPage;

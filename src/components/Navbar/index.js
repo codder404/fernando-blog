@@ -1,23 +1,37 @@
-import React from "react";
+import React from 'react';
 
-import { FaBars } from "react-icons/fa";
-import PageLinks from "../../constants/menu";
+import menuLinks from './content';
 
-import './styles.css';
+import { 
+  Header, 
+  HomeLink, 
+  Title,
+  MenuLinkList, 
+  MenuLinksItems, 
+  MenuLinkItem 
+} from './styles';
 
-const Navbar = ({ toggleSidebar }) => {
+const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="nav-center">
-        <div className="nav-header">
-          <h1>Fernando</h1>
-          <button type="button" className="toggle-btn" onClick={toggleSidebar}>
-            <FaBars></FaBars>
-          </button>
-        </div>
-        <PageLinks styleClass="nav-links"></PageLinks>
-      </div>
-    </nav>
+    <Header>
+      <HomeLink to="/">
+        <Title>
+          <span className="icon" role="img" aria-label="iduck">@</span>
+          fernando
+        </Title>
+      </HomeLink>
+      <MenuLinkList>
+        {menuLinks.map(({url, label}, j) => (
+          <MenuLinksItems key={j}>
+            <MenuLinkItem
+              to={url}
+            >
+              {label}
+            </MenuLinkItem>
+          </MenuLinksItems>
+        ))}
+      </MenuLinkList>
+    </Header>
   )
 }
 

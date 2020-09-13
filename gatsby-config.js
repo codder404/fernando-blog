@@ -1,30 +1,27 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   siteMetadata: {
-    title: "Fernando dos Santos",
-    description: "Meu site e blog pessoal, vou escrever sobre tecnologia, animes e filosofia.",
-    author: "@fernando",
-    twitterUsername: "@codder404",
-    image: "/fcoder.jpg",
-    siteUrl: "https://fernandodossantos.netlify.app",
+    title: 'Fernando dos Santos',
+    description: `My Personal Site`,
+    author: `@fernando`,
+    twitterUsername: `@codder404`,
+    image: '/static/images',
+    url: 'https://fernandodossantos.netlify.app',
+    siteUrl: 'https://fernandodossantos.netlify.app',
   },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `assets`,
-        path: `${__dirname}/src/assets/`,
+        name: `images`,
+        path: `${__dirname}/static/images`,
       },
     },
+    
     {
       resolve: `gatsby-source-strapi`,
       options: {
@@ -35,17 +32,17 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            variants: [`400`, `700`],
-          },
-          {
-            family: `Open Sans`,
-          },
-        ],
+        name: `Fernando`,
+        lang: `pt-ao`,
+        description: `My Personal Site`,
+        short_name: `Fernando`,
+        start_url: `/`,
+        background_color: `#161616`,
+        theme_color: `#161616`,
+        dispaly: `standalone`,
+        icon: `${__dirname}/static/images/iduck.png`,
       },
     },
   ],

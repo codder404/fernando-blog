@@ -1,22 +1,15 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react';
 
-import Layout from "../components/Layout";
-import SEO from "../components/SEO";
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
-const Error = () => {
+const NotFoundPage = () => {
   return (
     <Layout>
-      <SEO title="404" description="Página não encontrada" />
-      <main className="error-page">
-        <div className="error-container">
-          <h1>Ooops, Página não encontrada!</h1>
-          <h1>Vida Longa e Próspera</h1>
-          <Link to="/" className="btn">Voltar</Link>
-        </div>
-      </main>
+      <SEO title="404: Not found" />
+      <h1>Ops!!</h1>
     </Layout>
   )
 }
 
-export default Error;
+export default NotFoundPage;

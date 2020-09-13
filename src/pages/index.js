@@ -1,9 +1,10 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from "../components/Layout";
-import Hero from "../components/Hero";
-import Blogs from "../components/Blogs";
+import Layout from '../components/Layout';
+import Hero from '../components/Hero';
+import Blogs from '../components/Blogs';
+import Social from '../components/SocialText';
 import SEO from '../components/SEO';
 
 export default ({ data }) => {
@@ -11,32 +12,25 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" description="Página principal do blog" />
+      <SEO title="Home" />
       <Hero />
-      <Blogs blogs={blogs} title="Últimas do blog" showLink />
+      <Blogs blogs={blogs} />
+      <Social />
     </Layout>
   )
 }
 
-export const query = graphql`
+export const query = graphql `
   {
     allStrapiBlogs(sort: {fields: date, order: DESC}, limit: 3) {
       nodes {
         slug
-        content
         desc
-        date(formatString: "Do MMM, YY")
+        date(formatString: "DD MM YY")
         id
         title
         category
-        image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
-`;
+`

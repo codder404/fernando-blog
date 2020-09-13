@@ -1,45 +1,36 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from "../components/Layout";
-import Blogs from "../components/Blogs";
+import Layout from '../components/Layout';
+import Blogs from '../components/Blogs';
 import SEO from '../components/SEO';
 
-const Blog = ({ data: {
+const BlogPage = ({ data: {
   allStrapiBlogs: { nodes: blogs },
 },
-  
+
 }) => {
   return (
     <Layout>
-      <SEO title="Blog" description="Posts de tecnologia, anime e filosofia" />
-      <section className="blog-page">
-        <Blogs blogs={blogs}/>
-      </section>
+      <SEO title="Blog" description="My Personal Site" />
+      <Blogs blogs={blogs} />
     </Layout>
   )
 }
 
-export const query = graphql`
+export const query = graphql `
   {
     allStrapiBlogs {
       nodes {
         slug
         desc
-        date(formatString: "Do MMM, YY")
+        date(formatString: "DD MM YY")
         id
         title
         category
-        image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
 `;
 
-export default Blog;
+export default BlogPage;
