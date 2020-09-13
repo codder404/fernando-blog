@@ -14,7 +14,7 @@ const Blogs = ({ blogs }) => {
         return <Blog key={blog.id} {...blog} />
       })}
       
-      <ViewLink to="/blog">View All</ViewLink>
+      <ViewLink to="/blog">Ver todos os posts</ViewLink>
     </Section>
   )
 }
