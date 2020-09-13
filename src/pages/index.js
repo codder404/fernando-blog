@@ -29,7 +29,9 @@ export const query = graphql `
         date(formatString: "DD MM YY")
         id
         title
-        category
+        stack {
+          id
+        }
       }
     }
   }
