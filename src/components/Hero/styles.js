@@ -16,8 +16,15 @@ export const Container = styled.div`
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
+  width: 60%;
+  margin-left: 12em;
 
   @media (min-width: 66.667em) {
     margin-right: 2.5rem;
+  }
+
+ @media (max-width: 41.667em) {
+    width: 100%;
+    margin-left: 0;
   }
 `;
