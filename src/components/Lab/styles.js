@@ -1,6 +1,12 @@
 import styled from 'styled-components';
+import Image from 'gatsby-image';
 
 export const Section = styled.section`
+   
+`;
+
+export const Avatar = styled(Image)`
+  height: 14rem;
 `;
 
 export const Card = styled.div`

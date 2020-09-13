@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Image from 'gatsby-image';
 import { Github } from '@styled-icons/boxicons-logos/Github';
 import { Chrome } from '@styled-icons/boxicons-logos/Chrome';
 
@@ -10,7 +9,8 @@ import {
   ListCategory, 
   Category,
   ListSocial,
-  ItemSocial 
+  ItemSocial,
+  Avatar 
 } from './styles';
 
 import { PostTitle, PostMiddle } from '../styles/typography';
@@ -26,7 +26,7 @@ const Lab = ({
   return (
     <Section>
       <Card>
-        <Image fluid={image.childImageSharp.fluid} />
+        <Avatar fluid={image.childImageSharp.fluid} />
         <PostTitle>
         {title}
         <PostMiddle>{description}</PostMiddle>
