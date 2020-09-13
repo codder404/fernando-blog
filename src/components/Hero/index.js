@@ -8,8 +8,11 @@ const Hero = () => {
     <Container>
       <Section>
         <Title style={{marginBottom: "1rem"}}>Hi There!</Title>
-        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit architecto quae nobis reprehenderit laudantium sit quidem similique iusto! Maiores voluptas mollitia beatae praesentium at accusantium similique quibusdam illum reiciendis.</Text>
-        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit architecto quae nobis reprehenderit laudantium sit quidem similique iusto! Maiores voluptas mollitia beatae praesentium at accusantium similique quibusdam illum reiciendis.</Text>
+        <Text>
+          My name is Fernando dos Santos from Angola. I've been working as Front-End Developer since 2017. I'm passionate about open source projects, I believe that the dissemination of knowledge and good ideas inspires and improves the world.
+
+          Currently, I'm a Front-end Developer at Paga3. I'm focused on Front-end Development and user experience, I like to play with CSS, I'm always testing new things.
+        </Text>
       </Section>
     </Container>
   )
