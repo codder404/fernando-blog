@@ -28,15 +28,6 @@ const SocialMidia = () => {
       </ItemSocial>
 
       <ItemSocial
-        className={"likedin"}
-        href="https://linkedin.com/in/fernandosantosc"
-        title="Linkedin"
-      >
-        <Linkedin />
-        /fernandodossantos
-      </ItemSocial>
-
-      <ItemSocial
         className={"github"}
         href="https://github.com/codder404"
         title="Giithub"
@@ -52,6 +43,15 @@ const SocialMidia = () => {
       >
         <Telegram />
         @codder404
+      </ItemSocial>
+      
+       <ItemSocial
+        className={"likedin"}
+        href="https://linkedin.com/in/fernandosantosc"
+        title="Linkedin"
+      >
+        <Linkedin />
+        /fernandodossantos
       </ItemSocial>
     </ListSocial>
   )

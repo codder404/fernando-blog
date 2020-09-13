@@ -17,6 +17,31 @@ export const Title = styled.p `
       margin-bottom: 1.5rem;
     }
   }
+`;
+
+export const BTitle = styled.h2 `
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-left: 6.6em;
+  margin-bottom: 1em;
+
+  @media (min-width: 66.667em) {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+
+  @media (max-width: 41.667em) {
+    margin-left: 0;
+  }
+
+  &.margin {
+    margin-bottom: 1.2rem;
+
+    @media (min-width: 66.667em) {
+      margin-bottom: 1.5rem;
+    }
+  }
 `
 
 export const Text = styled.p `
@@ -54,6 +79,12 @@ export const PostTitle = styled.p `
 `
 
 export const PostSmall = styled.small `
+  color: #949495;
+  font-size: 0.8rem;
+  font-weight: 400;
+`
+
+export const PostMiddle = styled.small `
   color: #949495;
   font-size: 0.8rem;
   font-weight: 400;

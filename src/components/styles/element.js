@@ -90,6 +90,8 @@ export const ViewLink = styled(Link)`
   background: rgba(193, 193, 193, 0.06);
   color: #fff;
   padding: 0.6rem 1.2rem;
+  margin-left: 15em;
+  width: 8%;
   font-size: 0.8rem;
   border-radius: 3rem;
   border-bottom: 0;
@@ -99,5 +101,10 @@ export const ViewLink = styled(Link)`
 
   &:hover {
     background: #202124;
+  }
+
+  @media (max-width: 41.667em) {
+    width: 23%;
+    margin-left: 0;
   }
 `;

@@ -5,13 +5,14 @@ export const Card = styled(Link)`
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  width: 100%;
+  width: 60%;
   background: transparent;
   text-decoration: none;
   font-weight: 400;
   position: relative;
   border: 1px solid #202124;
   margin-bottom: .6rem;
+  margin-left: 12em;
 
   &:before {
     content: '';
@@ -30,6 +31,11 @@ export const Card = styled(Link)`
       width: calc(1.8rem + 100%);
       height: calc(1.4rem + 100%);
     }
+  }
+
+  @media (max-width: 41.667em) {
+    width: 100%;
+    margin-left: 0;
   }
 
   &:hover {

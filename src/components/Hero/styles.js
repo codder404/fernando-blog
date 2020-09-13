@@ -5,7 +5,6 @@ export const Container = styled.div`
   align-items: start;
   flex-direction: column-reverse;
   margin-top: 2rem;
-  margin-bottom: 3.5rem;
 
   @media (min-width: 66.667em) {
     margin-bottom: 4rem;

@@ -6,7 +6,7 @@ import {
   Category 
 } from './styles';
 
-import { PostTitle, PostSmall } from '../styles/typography';
+import { PostTitle, PostMiddle, PostSmall } from '../styles/typography';
 
 function Post() {
   return (
@@ -15,7 +15,8 @@ function Post() {
       <PostTitle>
        <PostSmall>12 de setembro de 2020</PostSmall>
        Buil a Single Page Aplication
-       <PostSmall>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In aliquam dolore consectetur, ut accusantium omnis eveniet non magni. Repellat, consectetur nobis? Facere, nostrum. Nobis officiis, enim mollitia eligendi quasi ea.</PostSmall>
+       <PostMiddle>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. In aliquam dolore consectetur, ut accusantium omnis eveniet non magni. Repellat, consectetur nobis? Facere, nostrum. Nobis officiis, enim mollitia eligendi quasi ea.</PostMiddle>
       </PostTitle>
       <ListCategory>
         <Category>React.js</Category>
@@ -28,7 +29,8 @@ function Post() {
       <PostTitle>
        <PostSmall>12 de setembro de 2020</PostSmall>
        Buil a Single Page Aplication
-       <PostSmall>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In aliquam dolore consectetur, ut accusantium omnis eveniet non magni. Repellat, consectetur nobis? Facere, nostrum. Nobis officiis, enim mollitia eligendi quasi ea.</PostSmall>
+       <PostMiddle>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. In aliquam dolore consectetur, ut accusantium omnis eveniet non magni. Repellat, consectetur nobis? Facere, nostrum. Nobis officiis, enim mollitia eligendi quasi ea.</PostMiddle>
       </PostTitle>
       <ListCategory>
         <Category>React.js</Category>
