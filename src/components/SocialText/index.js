@@ -2,8 +2,9 @@ import React from 'react';
 
 import SocialMidia from '../SocialMidia';
 
+import { Section } from './styles';
 import { Title, Text } from '../styles/typography';
-import { Section, Row, Contact, Left } from '../styles/element';
+import { Row, Contact, Left } from '../styles/element';
 
 const SocialText = () => {
   return (
@@ -14,7 +15,8 @@ const SocialText = () => {
       <Contact>
         <Left>
           <Text>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati repellendus maxime reiciendis, amet quos nihil consequuntur autem harum magni explicabo optio neque ducimus atque debitis similique odio, facilis earum.
+             Talk to me through my social networks, no need
+             to worry because I will get back to you as soon as possible.
           </Text>
           <SocialMidia />
         </Left>
