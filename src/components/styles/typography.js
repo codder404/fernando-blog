@@ -46,13 +46,8 @@ export const BTitle = styled.h2 `
 
 export const Text = styled.p `
   color: #949495;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 1.2rem;
-
-  @media (min-width: 66.667em) {
-    margin-bottom: 1.5rem;
-  }
 `
 
 export const PostTitle = styled.p `
