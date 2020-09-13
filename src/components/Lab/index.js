@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
+import { Github } from '@styled-icons/boxicons-logos/Github';
+import { Chrome } from '@styled-icons/boxicons-logos/Chrome';
 
 import {
   Card, 
@@ -11,27 +13,33 @@ import {
 import { PostTitle, PostMiddle, PostSmall } from '../styles/typography';
 
 const Lab = ({
-    id,
     title,
     description, 
     github,
     url,
     image,
-    stack
+    stack,
+    index
   }) => {
   return (
     <>
-      <Card key={id}>
+      <Card>
       <PostTitle>
        <PostSmall>
-        <Image fluid={image} />
+        <Image fluid={image.childImageSharp.fluid} />
        </PostSmall>
+       0{index + 1}
        {title}
        <PostMiddle>{description}</PostMiddle>
       </PostTitle>
       <ListCategory>
-        <Category>{github}</Category>
-        <Category>{url}</Category>
+        {stack.map((item) => {
+          return (
+            <Category key={item.id}>
+              {item.text}
+            </Category>
+          )
+        })}
       </ListCategory>
     </Card>
     </>
@@ -39,7 +47,6 @@ const Lab = ({
 }
 
 Lab.propTypes = {
-  id: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
