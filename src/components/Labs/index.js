@@ -1,12 +1,17 @@
 import React from 'react';
 
-import { Container } from './styles';
+import Lab from '../Lab';
+import { Section, Row } from '../../components/styles/element';
+import { BTitle } from '../../components/styles/typography';
 
 const Labs = () => {
   return (
-    <Container>
-      <h1>Lab</h1>
-    </Container>
+    <Section>
+      <Row>
+        <BTitle>Projetos</BTitle>
+        <Lab />
+      </Row>
+    </Section>
   )
 }
 
