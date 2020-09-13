@@ -12,6 +12,24 @@ export const Section = styled.section `
   }
 `;
 
+export const SectionAbout = styled.section `
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 3.5rem;
+  width: 60%;
+  margin: 0 auto;
+
+  @media (min-width: 66.667em) {
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 41.667em) {
+    width: 100%;
+    margin-left: 0;
+  }
+`;
+
 export const Left = styled.div ``
 
 export const Right = styled.div ``
