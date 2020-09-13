@@ -81,4 +81,13 @@ export const ItemSocial = styled.a`
         fill: rgb(0, 168, 255);
     }
   }
+
+  &.youtube {
+    background: rgba(255,65,66,.08);
+    -webkit-text-fill-color: #FF4142;
+    color: #FF4142;
+     svg {
+      fill: #FF4142;
+      }
+  }
 `;

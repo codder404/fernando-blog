@@ -4,6 +4,7 @@ import { InstagramAlt } from '@styled-icons/boxicons-logos/InstagramAlt';
 import { Github } from '@styled-icons/boxicons-logos/Github';
 import { Telegram } from '@styled-icons/boxicons-logos/Telegram';
 import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin';
+import { Youtube } from "@styled-icons/boxicons-logos/Youtube"
 
 import { ListSocial, ItemSocial } from './styles';
 
@@ -53,6 +54,14 @@ const SocialMidia = () => {
         <Linkedin />
         /fernandodos
       </ItemSocial>
+       <ItemSocial
+         className={"youtube"}
+          href="https://youtube.com/codder404"
+          title="Youtube"
+        >
+          <Youtube />
+          /codder404
+        </ItemSocial>
     </ListSocial>
   )
 }
