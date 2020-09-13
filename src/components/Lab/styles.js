@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
+export const Section = styled.section`
+`;
+
 export const Card = styled.div`
-  display: flex;
-  flex-direction: column;
   padding: 2rem;
   width: 40%;
   background: transparent;
@@ -11,11 +12,9 @@ export const Card = styled.div`
   position: relative;
   border: 1px solid #202124;
   margin-bottom: .9rem;
-  margin: 0 auto;
 
   &:before {
     content: '';
-    display: block;
     position: absolute;
     width: calc(1.2rem + 100%);
     height: calc(1rem + 100%);
@@ -34,7 +33,6 @@ export const Card = styled.div`
 
   @media (max-width: 41.667em) {
     width: 100%;
-    margin-left: 0;
   }
 
   &:hover {

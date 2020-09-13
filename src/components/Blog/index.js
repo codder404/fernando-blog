@@ -36,7 +36,7 @@ Blog.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  stack: PropTypes.object.isRequired,
+  stack: PropTypes.array.isRequired,
   desc: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
 }
