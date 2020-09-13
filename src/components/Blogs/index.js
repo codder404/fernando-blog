@@ -1,19 +1,23 @@
 import React from 'react';
 
-import Post from '../Post';
+import Blog from '../Blog';
 import { Section, Row, ViewLink } from '../../components/styles/element';
 import { BTitle } from '../../components/styles/typography';
 
-const Posts = () => {
+const Blogs = ({ blogs, showLink }) => {
   return (
     <Section>
       <Row>
         <BTitle>Últimas do blog</BTitle>
       </Row>
-      <Post />
-      <ViewLink>View All</ViewLink>
+      {blogs.map((blog) => {
+        return <Blog key={blog.id} {...blog} />
+      })}
+      {showLink && (
+        <ViewLink to="/blog">View All</ViewLink>
+      )}
     </Section>
   )
 }
 
-export default Posts;
+export default Blogs;
