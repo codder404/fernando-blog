@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
-import { Section } from '../components/styles/element';
+import { Section } from './styles';
 
 const BlogTemplate = ({ data }) => {
   const { content, title, desc } = data.blog;
