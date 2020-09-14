@@ -17,7 +17,7 @@ export const SectionAbout = styled.section `
   flex-direction: column;
   margin-top: 5rem;
   margin-bottom: 3.5rem;
-  width: 60%;
+  width: 48%;
   margin: 0 auto;
 
   @media (min-width: 66.667em) {

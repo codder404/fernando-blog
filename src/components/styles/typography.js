@@ -4,6 +4,7 @@ export const Title = styled.p `
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.2;
+  margin-bottom: 1rem;
 
   @media (min-width: 66.667em) {
     font-size: 1.8rem;
