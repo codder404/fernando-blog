@@ -23,7 +23,7 @@ export const BTitle = styled.h2 `
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.2;
-  margin-left: 7.6em;
+  margin-left: 8.4em;
   margin-bottom: 1em;
 
   @media (min-width: 66.667em) {
