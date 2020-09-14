@@ -9,7 +9,6 @@ import { Section } from './styles';
 
 const BlogTemplate = ({ data }) => {
   const { content, title, desc } = data.blog;
-
   return (
     <Layout>
      <SEO title={title} description={desc} />

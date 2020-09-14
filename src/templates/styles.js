@@ -4,6 +4,10 @@ export const Section = styled.section`
   width: 60%;
   margin: 0 auto;
 
+  > img {
+    width: 100vh;
+  }
+
   > h1 {
       font-weight: 700;
       font-size: 1.4rem;
