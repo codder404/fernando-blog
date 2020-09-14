@@ -6,7 +6,7 @@ export const ListSocial = styled.div `
 `;
 
 export const ItemSocial = styled.a`
-  padding: .75rem 1rem .75rem 1rem;
+  padding: .75rem 1rem .75rem 2rem;
   letter-spacing: .05em;
   margin: .5rem .35rem;
   font-weight: 500;
