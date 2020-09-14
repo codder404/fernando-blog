@@ -4,7 +4,6 @@ import { Github } from '@styled-icons/boxicons-logos/Github';
 import { Chrome } from '@styled-icons/boxicons-logos/Chrome';
 
 import {
-  Section,
   Card, 
   ListCategory, 
   Category,
@@ -24,7 +23,6 @@ const Lab = ({
     stack
   }) => {
   return (
-    <Section>
       <Card>
         <Avatar fluid={image.childImageSharp.fluid} />
         <PostTitle>
@@ -51,7 +49,6 @@ const Lab = ({
           })}
         </ListCategory>
       </Card>
-    </Section>
   )
 }
 
