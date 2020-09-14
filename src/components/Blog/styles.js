@@ -11,8 +11,8 @@ export const Card = styled(Link)`
   font-weight: 400;
   position: relative;
   border: 1px solid #202124;
-  margin-bottom: .6rem;
   margin: 0 auto;
+  margin-bottom: 1rem;
 
   &:before {
     content: '';
