@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Section = styled.section`
   width: 60%;
   margin: 0 auto;
+  margin-top: 7rem;
 
   > img {
     width: 100vh;
@@ -68,6 +69,13 @@ export const Section = styled.section`
           margin-bottom: 1.5rem;
         }
       }
+    }
+
+    > p > strong {
+      background: #2d2d2d;
+      color: rgba(255,255,255, .9);
+      padding: 0.3em 0.3em 0.2em;
+      box-shadow: none;
     }
 
   > p {
