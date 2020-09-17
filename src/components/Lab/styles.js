@@ -11,7 +11,6 @@ export const Avatar = styled(Image)`
 
 export const Card = styled.div`
   padding: 2rem;
-  width: 40%;
   background: transparent;
   text-decoration: none;
   font-weight: 400;
